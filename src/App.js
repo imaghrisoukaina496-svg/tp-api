@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import PostsFetch from "./PostsFetch";
+import UsersAxios from "./UsersAxios";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <main className="app">
+      <header className="hero">
+        <h1>Consommation d’API avec React</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Exemple pratique utilisant Fetch et Axios pour récupérer des données
+          depuis une API externe.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
-    </div>
+
+      <PostsFetch />
+      <UsersAxios />
+    </main>
   );
 }
 
